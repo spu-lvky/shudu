@@ -128,6 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="sudoku_generate.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sudoku_generate.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="result.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
