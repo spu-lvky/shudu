@@ -127,14 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="generator\sudoku_generate.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="sudoku_generate.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="sudoku_generate.h" />
+    <ClCompile Include="solver\solver.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="result.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="generator\sudoku_generate.h" />
+    <ClInclude Include="solver\solver.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -363,3 +363,7 @@ MigrationBackup/
 FodyWeavers.xsd
 
 x64
+
+*.vsxproj*
+
+*.sln*

@@ -241,7 +241,7 @@ bool SudokuSolver::dfs(int select) {
 	resume(col);
 	return false;
 }
-int main() {
+/*int main() {
 	ifstream in("C://Users//26937//Desktop//shudo.txt");
 	if (!in.is_open()) {
 		cout << "无法打开！" << endl;
@@ -257,7 +257,7 @@ int main() {
 		/*if (isdigit(c)) {
 			
 		}*/
-		ch[count++] = c;
+		/*ch[count++] = c;
 		if (count == 81) {
 			count = 0;
 			//cout << "进行运算" << endl;
@@ -273,6 +273,6 @@ int main() {
 	}
 	else
 		cout << "已解出" + parameter2 + "里的数独" << endl;*/
-	fclose(out);
+		/*fclose(out);
 	return 0;
-}
+}*/

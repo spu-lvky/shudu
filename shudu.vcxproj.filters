@@ -18,16 +18,22 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="sudoku_generate.cpp">
+    <ClCompile Include="generator\sudoku_generate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="solver\solver.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sudoku_generate.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
+    <Text Include="result.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="result.txt" />
+    <ClInclude Include="generator\sudoku_generate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="solver\solver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
