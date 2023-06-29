@@ -1,41 +1,3 @@
-//#include<iostream>
-//using namespace std;
-//
-//
-//int sudoku_table[9][9];
-//const int maxcol = 9 * 9 * 4 + 1;
-//const int maxrow = 9 * 9 * 9;
-//const int num = maxcol * maxrow;
-////col 和 row数组相当于时间换空间
-//int Left[num]={0};
-//int Right[num], Up[num], Down[num], Col[num], Row[num];
-///// <summary>
-///// 将数独table转换为六个数组的存储
-///// 数独table有数就是本来的数字，没数就填0
-///// </summary>
-//void init() {
-//	for (int i = 1; i < maxcol; i++) {
-//		Left[i] = i - 1;
-//		Right[i - 1] = i;
-//	}
-//	Left[0] = maxcol - 1;
-//	Right[maxcol - 1] = 0;
-//	//left[0] = num-1;
-//	//right[num - 1] = 0;
-//
-//	for (int i = 0; i < 9; i++) {
-//		for (int j = 0; j < 9; j++) {
-//			if (sudoku_table[i][j]) {
-//
-//			}
-//		}
-//	}
-//}
-//
-//int main() {
-//
-//}
-
 #pragma warning(disable : 4996)
 #include "solver.h"
 int Left[num], Right[num], Up[num], Down[num];	// 每个元素的4个方向分量（相当于链表中的箭头
@@ -66,11 +28,11 @@ char* SudokuSolver::solve(char ch[]) {
 		}
 	}
 	dfs(select + 1);
-	for (int i = 0; i < 9; i++) {
+	/*for (int i = 0; i < 9; i++) {
 		for (int j = 0; j < 9; j++) {
 			cout << table[i][j];
 		}
-	}
+	}*/
 
 	for (size_t i = 0; i < 9; i++) {
 		for (size_t j = 0; j < 8; j++) {
@@ -87,6 +49,7 @@ char* SudokuSolver::solve(char ch[]) {
 }
 //这里的函数参数是什么类型
 void SudokuSolver::transform(int table[][9], char ch[]) {
+
 
 	int pos = 0;
 	for (int i = 0; i < 9; i++) {
@@ -159,10 +122,10 @@ void SudokuSolver::link() {
 			}
 		}
 	}
-	for (int i = Right[0]; i != 0; i = Right[i]) {
+	/*for (int i = Right[0]; i != 0; i = Right[i]) {
 		int size = Size[i];
 		cout << i<<"  "<<size << endl;
-	}
+	}*/
 
 }
 void SudokuSolver::insertNode(int col, int no) {
@@ -198,11 +161,11 @@ void SudokuSolver::resume(int col) {
 	}
 }
 bool SudokuSolver::dfs(int select) {
-	cout << "yunxing"<<endl;
+	//cout << "yunxing"<<endl;
 	if (select > 81) {
 		return true;
 	}
-	cout << "yunxing1"<<endl;
+	//cout << "yunxing1"<<endl;
 	int col = 0;
 	int min = INT_MAX;
 	for (int i = Right[0]; i != 0; i = Right[i]) {
@@ -216,16 +179,16 @@ bool SudokuSolver::dfs(int select) {
 			col = i;
 		}
 	}
-	cout << "yunxing2" << endl;
+	//cout << "yunxing2" << endl;
 	remove(col);
-	cout << "yunxing3"<<endl;
+	//cout << "yunxing3"<<endl;
 	/* 遍历该列各“1”元素,逐行依次尝试,失败则恢复已移除的结点 */
 	for (int i = Down[col]; i != col; i = Down[i]) {
-		cout << "yunxing";
+		//cout << "yunxing";
 		//select++;
 		int row = Row[i];
 		table[row / 81][row % 81 / 9] = row % 9 + 1;
-		cout << "修改" << row / 81 << " " << row % 81 / 9 << "为" << row % 9 + 1 << endl;
+		//cout << "修改" << row / 81 << " " << row % 81 / 9 << "为" << row % 9 + 1 << endl;
 		//cout << table[9][9] << endl;
 		for (int j = Right[i]; j != i; j = Right[j]) {
 			remove(Col[j]);
@@ -241,38 +204,39 @@ bool SudokuSolver::dfs(int select) {
 	resume(col);
 	return false;
 }
-/*int main() {
-	ifstream in("C://Users//26937//Desktop//shudo.txt");
-	if (!in.is_open()) {
-		cout << "无法打开！" << endl;
-		return 0;
-	}
-	char ch[81];
-	char c;
-	int count = 0;
-	SudokuSolver ss;
-	FILE* out = fopen("sudoku.txt", "wt");
-	while (in.get(c)) {	//in >> c 会忽略空白回车符
-		//cout << c;
-		/*if (isdigit(c)) {
-			
-		}*/
-		/*ch[count++] = c;
-		if (count == 81) {
-			count = 0;
-			//cout << "进行运算" << endl;
-			fputs(ss.solve(ch), out);
-		}
-	}
-	cout << count;
-	in.close();
-	/*if (count != 0) {
-		char* str = "存在错误格式！";
-		fputs(str, out);
-		cout << str << endl;
-	}
-	else
-		cout << "已解出" + parameter2 + "里的数独" << endl;*/
-		/*fclose(out);
-	return 0;
-}*/
+//int main() {
+//	ifstream in("C://Users//26937//Desktop//shudo.txt");
+//	if (!in.is_open()) {
+//		//cout << "无法打开！" << endl;
+//		return 0;
+//	}
+//	char ch[81];
+//	char c;
+//	int count = 0;
+//	SudokuSolver ss;
+//	FILE* out = fopen("sudoku.txt", "wt");
+//	while (in.get(c)) {	//in >> c 会忽略空白回车符
+//		//cout << c;
+//		/*if (isdigit(c)) {
+//			
+//		}*/
+//		ch[count++] = c;
+//		if (count == 81) {
+//			count = 0;
+//			//cout << "进行运算" << endl;
+//			fputs(ss.solve(ch), out);
+//		}
+//		//cout << count << endl;
+//	}
+//	//cout <<endl<< int(ch[0])<<"  "<<count;
+//	in.close();
+//	if (count != 0) {
+//		/*char* str = "存在错误格式！";
+//		fputs(str, out);*/
+//		cout << "存在错误格式！" << endl;
+//	}
+//	else
+//		cout << "已解出里的数独" << endl;
+//	fclose(out);
+//	return 0;
+//}

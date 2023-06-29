@@ -29,13 +29,15 @@ int main(int argc,char* argv[]) {
 	else if (strcmp(argv[1], "-s") == 0) {
 		int num = 0;
 		const char* filename = argv[2];
-		FILE* in = fopen(filename, "r");
+		//FILE* in = fopen(filename, "r");
+		ifstream in(filename);
 
-		if (in == NULL) {
+		if (!in.is_open()) {
 			printf("无法打开文件 %s\n", filename);
 			return 0;
 		}
-
+		char ch[81];
+		char c;
 		SudokuSolver ss;
 		FILE* out = fopen("sudoku.txt", "wt");
 		int count = 0;

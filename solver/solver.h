@@ -4,7 +4,7 @@
 #include <fstream>
 #include <sstream>
 #include <algorithm>
-
+#include<stdio.h>
 using namespace std;
 
 const int maxrow = 9 * 9 * 9;

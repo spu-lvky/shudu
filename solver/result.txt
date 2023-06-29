@@ -1,0 +1,64 @@
+error: too many errors emitted, stopping now [clang-diagnostic-error]
+D:\VS2022\IDE\exe\VC\Tools\MSVC\14.32.31326\include\cstdlib:23:62: error: expected function body after function declarator [clang-diagnostic-error]
+_NODISCARD _Check_return_ inline double abs(_In_ double _Xx) noexcept /* strengthened */ {
+                                                             ^
+D:\VS2022\IDE\exe\VC\Tools\MSVC\14.32.31326\include\yvals.h:341:1: error: expected ';' after top level declarator [clang-diagnostic-error]
+_STD_BEGIN
+^
+D:\VS2022\IDE\exe\VC\Tools\MSVC\14.32.31326\include\yvals_core.h:1441:34: note: expanded from macro '_STD_BEGIN'
+#define _STD_BEGIN namespace std {
+                                 ^
+D:\VS2022\IDE\exe\VC\Tools\MSVC\14.32.31326\include\yvals.h:341:1: error: unknown type name 'namespace' [clang-diagnostic-error]
+_STD_BEGIN
+^
+D:\VS2022\IDE\exe\VC\Tools\MSVC\14.32.31326\include\yvals_core.h:1441:20: note: expanded from macro '_STD_BEGIN'
+#define _STD_BEGIN namespace std {
+                   ^
+D:\VS2022\IDE\exe\VC\Tools\MSVC\14.32.31326\include\yvals_core.h:23:2: error: STL1003: Unexpected compiler, expected C++ compiler. [clang-diagnostic-error]
+#error STL1003: Unexpected compiler, expected C++ compiler.
+ ^
+D:\Windows Kits\10\Include\10.0.20348.0\ucrt\corecrt_wstdio.h:34:14: error: unknown type name 'FILE' [clang-diagnostic-error]
+_ACRTIMP_ALT FILE* __cdecl __acrt_iob_func(unsigned _Ix);
+             ^
+D:\Windows Kits\10\Include\10.0.20348.0\ucrt\corecrt_wstdio.h:52:17: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Inout_ FILE* _Stream
+                ^
+D:\Windows Kits\10\Include\10.0.20348.0\ucrt\corecrt_wstdio.h:61:17: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Inout_ FILE*   _Stream);
+                ^
+D:\Windows Kits\10\Include\10.0.20348.0\ucrt\corecrt_wstdio.h:70:17: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Inout_ FILE* _Stream
+                ^
+D:\Windows Kits\10\Include\10.0.20348.0\ucrt\corecrt_wstdio.h:82:38: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Inout_                      FILE*    _Stream
+                                     ^
+D:\Windows Kits\10\Include\10.0.20348.0\ucrt\corecrt_wstdio.h:88:17: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Inout_ FILE*          _Stream
+                ^
+D:\Windows Kits\10\Include\10.0.20348.0\ucrt\corecrt_wstdio.h:107:17: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Inout_ FILE*   _Stream
+                ^
+D:\Windows Kits\10\Include\10.0.20348.0\ucrt\corecrt_wstdio.h:123:17: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Inout_ FILE*  _Stream
+                ^
+D:\Windows Kits\10\Include\10.0.20348.0\ucrt\corecrt_wstdio.h:127:14: error: unknown type name 'FILE' [clang-diagnostic-error]
+    _ACRTIMP FILE * __cdecl _wfdopen(
+             ^
+D:\Windows Kits\10\Include\10.0.20348.0\ucrt\corecrt_wstdio.h:133:14: error: unknown type name 'FILE' [clang-diagnostic-error]
+    _ACRTIMP FILE* __cdecl _wfopen(
+             ^
+D:\Windows Kits\10\Include\10.0.20348.0\ucrt\corecrt_wstdio.h:140:35: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Outptr_result_maybenull_ FILE**         _Stream,
+                                  ^
+D:\Windows Kits\10\Include\10.0.20348.0\ucrt\corecrt_wstdio.h:147:14: error: unknown type name 'FILE' [clang-diagnostic-error]
+    _ACRTIMP FILE* __cdecl _wfreopen(
+             ^
+D:\Windows Kits\10\Include\10.0.20348.0\ucrt\corecrt_wstdio.h:150:17: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Inout_ FILE*          _OldStream
+                ^
+D:\Windows Kits\10\Include\10.0.20348.0\ucrt\corecrt_wstdio.h:155:35: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Outptr_result_maybenull_ FILE**         _Stream,
+                                  ^
+D:\Windows Kits\10\Include\10.0.20348.0\ucrt\corecrt_wstdio.h:158:35: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Inout_                   FILE*          _OldStream
+                                  ^

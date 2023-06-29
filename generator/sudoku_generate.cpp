@@ -81,9 +81,9 @@ bool getFirstFinalSet() {
 bool printFinalSet(ofstream &outFile) {
 	for (int i = 0;i < 9;i++) {
 		for (int j = 0;j < 9;j++) {
-			outFile << g_final_set[i][j] << ' ';
+			outFile << g_final_set[i][j];
 		}
-		outFile << endl;
+		//outFile << endl;
 	}
 	outFile << endl;
 	return true;
