@@ -29,7 +29,30 @@ int main(int argc,char* argv[]) {
 	else if (strcmp(argv[1], "-s") == 0) {
 		int num = 0;
 		const char* filename = argv[2];
+		FILE* in = fopen(filename, "r");
 
+		if (in == NULL) {
+			printf("无法打开文件 %s\n", filename);
+			return 0;
+		}
+
+		SudokuSolver ss;
+		FILE* out = fopen("sudoku.txt", "wt");
+		int count = 0;
+		while (in.get(c)) {	//in >> c 会忽略空白回车符
+			//cout << c;
+			/*if (isdigit(c)) {
+
+			}*/
+			ch[count++] = c;
+			if (count == 81) {
+				count = 0;
+				//cout << "进行运算" << endl;
+				fputs(ss.solve(ch), out);
+			}
+		}
+		in.close();
+		//cout << count;
 		//TODO:调用函数读取数独并求解
 	}
 	else{
