@@ -1,0 +1,83 @@
+error: too many errors emitted, stopping now [clang-diagnostic-error]
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstdio.h:34:14: error: unknown type name 'FILE' [clang-diagnostic-error]
+_ACRTIMP_ALT FILE* __cdecl __acrt_iob_func(unsigned _Ix);
+             ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstdio.h:52:17: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Inout_ FILE* _Stream
+                ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstdio.h:61:17: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Inout_ FILE*   _Stream);
+                ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstdio.h:70:17: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Inout_ FILE* _Stream
+                ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstdio.h:82:38: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Inout_                      FILE*    _Stream
+                                     ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstdio.h:88:17: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Inout_ FILE*          _Stream
+                ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstdio.h:107:17: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Inout_ FILE*   _Stream
+                ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstdio.h:123:17: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Inout_ FILE*  _Stream
+                ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstdio.h:127:14: error: unknown type name 'FILE' [clang-diagnostic-error]
+    _ACRTIMP FILE * __cdecl _wfdopen(
+             ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstdio.h:133:14: error: unknown type name 'FILE' [clang-diagnostic-error]
+    _ACRTIMP FILE* __cdecl _wfopen(
+             ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstdio.h:140:35: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Outptr_result_maybenull_ FILE**         _Stream,
+                                  ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstdio.h:147:14: error: unknown type name 'FILE' [clang-diagnostic-error]
+    _ACRTIMP FILE* __cdecl _wfreopen(
+             ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstdio.h:150:17: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Inout_ FILE*          _OldStream
+                ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstdio.h:155:35: error: unknown type name 'FILE' [clang-diagnostic-error]
+        _Outptr_result_maybenull_ FILE**         _Stream,
+                                  ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\cstdlib:23:62: error: expected function body after function declarator [clang-diagnostic-error]
+_NODISCARD _Check_return_ inline double abs(_In_ double _Xx) noexcept /* strengthened */ {
+                                                             ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\yvals.h:346:1: error: expected ';' after top level declarator [clang-diagnostic-error]
+_STD_BEGIN
+^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\yvals_core.h:1803:34: note: expanded from macro '_STD_BEGIN'
+#define _STD_BEGIN namespace std {
+                                 ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\yvals.h:346:1: error: unknown type name 'namespace' [clang-diagnostic-error]
+_STD_BEGIN
+^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\yvals_core.h:1803:20: note: expanded from macro '_STD_BEGIN'
+#define _STD_BEGIN namespace std {
+                   ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\yvals_core.h:29:2: error: Error in C++ Standard Library usage [clang-diagnostic-error]
+#error Error in C++ Standard Library usage
+ ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\yvals_core.h:829:1: error: static_assert failed "Error in C++ Standard Library usage." [clang-diagnostic-error]
+_EMIT_STL_ERROR(STL1000, "Unexpected compiler version, expected Clang 15.0.0 or newer.");
+^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\yvals_core.h:484:5: note: expanded from macro '_EMIT_STL_ERROR'
+    static_assert(false, "Error in C++ Standard Library usage.")
+    ^             ~~~~~
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\yvals_core.h:829:1: error: use of undeclared identifier 'false' [clang-diagnostic-error]
+_EMIT_STL_ERROR(STL1000, "Unexpected compiler version, expected Clang 15.0.0 or newer.");
+^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\yvals_core.h:484:19: note: expanded from macro '_EMIT_STL_ERROR'
+    static_assert(false, "Error in C++ Standard Library usage.")
+                  ^
+C:\Users\cy\Desktop\rjgc\5\shudu\shudu\generator\sudoku_generate.h:1:10: warning: the current #pragma pack alignment value is modified in the included file [clang-diagnostic-pragma-pack]
+#include <cstdlib>
+         ^
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\cstdlib:15:9: note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(push, _CRT_PACKING)
+        ^
+C:\Users\cy\Desktop\rjgc\5\shudu\shudu\generator\sudoku_generate.h:2:10: warning: the current #pragma pack alignment value is modified in the included file [clang-diagnostic-pragma-pack]
+#include <time.h>
+         ^
+note: previous '#pragma pack' directive that modifies alignment is here

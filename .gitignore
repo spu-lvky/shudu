@@ -367,3 +367,7 @@ x64
 *.vcxproj*
 
 *.sln*
+
+cpplint.py
+
+CoverageReport*
